@@ -4,6 +4,7 @@
   "description": "Calculator to Compare Real Estate Indexation Tax Benefit",
   "private": true,
   "dependencies": {
+    "@radix-ui/colors": "^3.0.0",
     "@radix-ui/react-slider": "^1.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
