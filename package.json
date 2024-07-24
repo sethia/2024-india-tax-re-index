@@ -4,13 +4,14 @@
   "description": "Calculator to Compare Real Estate Indexation Tax Benefit",
   "private": true,
   "dependencies": {
-    "@radix-ui/react-slider": "^1.1.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "recharts": "^2.7.2"
+    "@radix-ui/react-slider": "^1.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "^5.0.1",
+    "recharts": "^2.12.7"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^5.0.0"
   },
   "scripts": {

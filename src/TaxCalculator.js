@@ -97,15 +97,24 @@ const TaxCalculator = () => {
       <ResponsiveContainer width="100%" height={400}>
         <LineChart data={chartData} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="year" />
-          <YAxis />
+          <XAxis 
+            dataKey="year" 
+            label={{ value: 'Holding Period (Years)', position: 'insideBottom', offset: -5 }} 
+          />
+          <YAxis 
+            label={{ value: 'Amount (₹)', angle: -90, position: 'insideLeft' }} 
+          />
           <Tooltip formatter={(value) => `₹${value.toLocaleString('en-IN')}`} />
           <Legend />
           <Line type="monotone" dataKey="oldTax" name="Old Tax (20% with indexation)" stroke="#8884d8" strokeWidth={3} dot={false} />
           <Line type="monotone" dataKey="newTax" name="New Tax (12.5% flat)" stroke="#82ca9d" strokeWidth={3} dot={false} />
           <Line type="monotone" dataKey="indexedCost" name="Indexed Cost" stroke="#ff7300" strokeWidth={2} strokeDasharray="3 3" dot={false} />
           {crossoverPoint && (
-            <ReferenceLine x={crossoverPoint.year} stroke="red" label={{ value: 'Crossover', position: 'top' }} />
+            <ReferenceLine 
+              x={crossoverPoint.year} 
+              stroke="red" 
+              label={{ value: 'Crossover', position: 'top' }} 
+            />
           )}
         </LineChart>
       </ResponsiveContainer>
