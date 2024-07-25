@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/2024-india-tax-re-index/static/css/main.483777f0.css",
+    "main.js": "/2024-india-tax-re-index/static/js/main.46997da4.js",
+    "index.html": "/2024-india-tax-re-index/index.html",
+    "main.483777f0.css.map": "/2024-india-tax-re-index/static/css/main.483777f0.css.map",
+    "main.46997da4.js.map": "/2024-india-tax-re-index/static/js/main.46997da4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.483777f0.css",
+    "static/js/main.46997da4.js"
+  ]
+}
